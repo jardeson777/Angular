@@ -1,0 +1,23 @@
+.option{
+  margin-bottom: 10px;
+
+  input + label{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #c9c7c7;
+    color: #fff;
+    font-weight: 500;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  input:checked + label{
+    background-color: #5f6c7b;
+    transition: background-color .7s;
+  }
+}
