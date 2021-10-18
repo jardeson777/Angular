@@ -1,8 +1,18 @@
-<section class="cardSelecaoInicial">
-  <img src="./assets/image/logo.png" alt="">
+<section class="containerMenuMain">
+  <div class="cardSelecaoInicial">
+    <img src="./assets/image/logo.png" alt="">
 
-  <h1>
-    Selecione uma opção
-  </h1>
+    <h1>
+      Selecione uma opção
+    </h1>
 
+    <form [formGroup]="formMenuMain" (ngSubmit)="menuMainSubmit()">
+      <app-option-card-selecao-menu [formulario]="formMenuMain" nameLabel="Agendar" value="schedule" idLabel="schedule"></app-option-card-selecao-menu>
+      <app-option-card-selecao-menu [formulario]="formMenuMain" nameLabel="Ver agenda" value="viewSchedule" idLabel="viewSchedule"></app-option-card-selecao-menu>
+      <app-option-card-selecao-menu [formulario]="formMenuMain" nameLabel="Cadastrar Cliente" value="register" idLabel="register"></app-option-card-selecao-menu>
+      <app-option-card-selecao-menu [formulario]="formMenuMain" nameLabel="Ver extrato" value="extract" idLabel="extract"></app-option-card-selecao-menu>
+
+      <app-button-primary text="Avançar" *ngIf="formMenuMain.valid"></app-button-primary>
+    </form>
+  </div>
 </section>

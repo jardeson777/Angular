@@ -1,5 +1,5 @@
-<div class="option">
-  <input type="radio" class="menuInicial" name="menuInicial" id="{{ idLabel }}" hidden>
+<div class="option" [formGroup]="formulario">
+  <input type="radio" class="menuInicial" name="option" value="{{value}}" formControlName="option" id="{{ idLabel }}" hidden>
   <label for="{{ idLabel }}">
     {{ nameLabel }}
   </label>

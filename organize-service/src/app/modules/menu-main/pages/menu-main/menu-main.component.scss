@@ -1,10 +1,36 @@
-.cardSelecaoInicial{
-  width: 100%;
+
+
+.containerMenuMain{
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
+  .cardSelecaoInicial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 40px;
+    border: 1px solid #e9e9e9;
+    box-shadow: 3px 3px 4px 0px #000000;;
+    width: calc(100% - 20px);
+    max-width: 400px;
+    height: fit-content;
+    margin: 0 auto;
+
+    img{
+      display: block;
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto 30px;
+    }
+
+    h1{
+      color: #666666;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
 }
-
-
