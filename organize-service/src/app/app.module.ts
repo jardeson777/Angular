@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AppMainModule } from './modules/app-main/app-main.module';
 import { MenuMainModule } from './modules/menu-main/menu-main.module';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { MenuMainModule } from './modules/menu-main/menu-main.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MenuMainModule
+    MenuMainModule,
+    AppMainModule
   ],
   providers: [],
   bootstrap: [AppComponent]

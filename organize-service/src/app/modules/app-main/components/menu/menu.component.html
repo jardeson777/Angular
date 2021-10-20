@@ -1,0 +1,18 @@
+<nav>
+  <a routerLink="">
+    <img src="assets/image/logo1.png" alt="Logo" width="80">
+  </a>
+
+  <button class="hambButton" (click)="menuHamb(this)">
+    <div></div>
+    <div></div>
+    <div></div>
+  </button>
+
+  <ul>
+    <li><a routerLinkActive="active" routerLink="schedule">Agendar</a></li>
+    <li><a routerLinkActive="active" routerLink="viewSchedule">Ver agenda</a></li>
+    <li><a routerLinkActive="active" routerLink="register">Cadastrar cliente</a></li>
+    <li><a routerLinkActive="active" routerLink="extract">Ver extrato</a></li>
+  </ul>
+</nav>

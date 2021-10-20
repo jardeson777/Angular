@@ -21,8 +21,8 @@ export class MenuMainComponent implements OnInit {
 
   menuMainSubmit(){
     this.optionChosen = this.formMenuMain.controls['option'].value;
-    console.log(this.optionChosen);
-    this.router.navigate([this.optionChosen])
+    // console.log(this.optionChosen);
+    this.router.navigate(['/main/' + this.optionChosen])
   }
 
 }
